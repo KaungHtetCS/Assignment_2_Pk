@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="back">
+            
+        <span class="bdr-1"></span>
+        <span class="bdr-2"></span>
+        <span class="bdr-3"></span>
+        <span class="bdr-4"></span>
+
+        <label for="result" class="result">
+            <a id="lastcal"></a>
+            <input type="text" id="result"></input>
+        </label>
+        <table class="btns">
+            <tr>
+                <td onclick="add('7')">7</td>
+                <td onclick="add('8')">8</td>
+                <td onclick="add('9')">9</td>
+                <td onclick="Clear()">C</td>
+            </tr>
+            <tr>
+                <td onclick="add('4')">4</td>
+                <td onclick="add('5')">5</td>
+                <td onclick="add('6')">6</td>
+                <td onclick="add('+')">+</td>
+            </tr>
+            <tr>
+                <td onclick="add('1')">1</td>
+                <td onclick="add('2')">2</td>
+                <td onclick="add('3')">3</td>
+                <td onclick="add('-')">-</td>
+            </tr>
+            <tr>
+                <td onclick="add('0')">0</td>
+                <td onclick="add('/')">&div;</td>
+                <td onclick="add('*')">&#215;</td>
+                <td onclick="Solve()">=</td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.2/math.js"></script>
+    <script type="module" src="math.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

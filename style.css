@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@500&display=swap');
+
+:root{
+    --txtclr: #ff0000;
+    animation: hue ease 10s infinite;
+}
+
+body{
+    background-color: #000;
+}
+
+.back{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background-color: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: var(--txtclr) 0 0 20px;
+    overflow: hidden;
+}
+
+.btns{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    color: var(--txtclr);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 20px;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.btns tr td{
+    width: 70px;
+    height: 70px;
+    border: var(--txtclr) solid 2px;
+    transition: cubic-bezier(0.46, 0.03, 0.52, 0.96) 0.15s;
+}
+
+.btns tr td:hover{
+    box-shadow: 0 0 10px;
+}
+
+.result{
+    width: 300px;
+    height: 75px;
+    background-color: #171717;
+    text-align: right;
+    padding: 10px;
+    color: var(--txtclr);
+    font-family: 'Victor Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result input{
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    color: var(--txtclr);
+    padding: 10px;
+    font-size: 25px;
+}
+
+.result input:focus{
+    outline: none;
+}
+
+.result a{
+    font-size: 15px;
+}
+
+@keyframes hue{
+    0%{
+        --txtclr: hsl(0deg, 100%, 50%);
+    }
+    12.5%{
+        --txtclr: hsl(45deg, 100%, 50%);
+    }
+    25%{
+        --txtclr: hsl(90deg, 100%, 50%);
+    }
+    37.5%{
+        --txtclr: hsl(95deg, 100%, 50%);
+    }
+    50%{
+        --txtclr: hsl(180deg, 100%, 50%);
+    }
+    62.5%{
+        --txtclr: hsl(225deg, 100%, 50%);
+    }
+    75%{
+        --txtclr: hsl(270deg, 100%, 50%);
+    }
+    87.5%{
+        --txtclr: hsl(315deg, 100%, 50%);
+    }
+    100%{
+        --txtclr: hsl(360deg, 100%, 50%);
+    }
+}
+
+.bdr{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.bdr-1{
+    position: absolute;
+    top: 0;
+    left: -30%;
+    height: 10px;
+    width: 30%;
+    background-color: var(--txtclr);
+    animation: Go1 1s infinite ease-in-out 0.5s;
+}
+
+.bdr-2{
+    position: absolute;
+    bottom: 0;
+    right: -30%;
+    height: 10px;
+    width: 30%;
+    background-color: var(--txtclr);
+    animation: Go2 1s infinite ease-in-out 0.5s;
+}
+
+.bdr-3{
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    height: 30%;
+    width: 10px;
+    background-color: var(--txtclr);
+    animation: Go3 1s infinite ease-in-out 0.05s;
+}
+
+.bdr-4{
+    position: absolute;
+    top: -30%;
+    right: 0;
+    height: 30%;
+    width: 10px;
+    background-color: var(--txtclr);
+    animation: Go4 1s infinite ease-in-out 0.05s;
+}
+
+
+@keyframes Go1{
+    0%{
+        left: -30%;
+    }
+    100%{
+        left: 130%;
+    }
+}
+
+@keyframes Go2{
+    0%{
+        right: -30%;
+    }
+    100%{
+        right: 130%;
+    }
+}
+
+@keyframes Go3{
+    0%{
+        bottom: -30%;
+    }
+    100%{
+        bottom: 130%;
+    }
+}
+
+@keyframes Go4{
+    0%{
+        top: -30%;
+    }
+    100%{
+        top: 130%;
+    }
+}
