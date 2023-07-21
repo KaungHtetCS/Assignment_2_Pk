@@ -1,0 +1,74 @@
+body{
+    background-color: #000;
+}
+
+.main{
+    background-color: #111;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+}
+
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top button{
+    border: none;
+    width: 150px;
+    height: 25px;
+    background-color: #0066ee;
+    color: #fff;
+    border-radius: 10px;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+.top button:hover{
+    font-size: 17px;
+    font-weight: bold;
+    width: 170px;
+    height: 30px;
+}
+
+.display{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: auto;
+}
+
+.tbc{
+    padding: 10px;
+    background-color: #fff;
+    border: 3px solid #555;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    max-height: 250px;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.tbc img{
+    width: 150px;
+    height: 150px;
+}
